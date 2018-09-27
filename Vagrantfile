@@ -14,5 +14,10 @@ Vagrant.configure("2") do |config|
   config.vm.network("private_network", ip: "192.168.10.100")
   config.hostsupdater.aliases = ["development.local"]
   config.vm.synced_folder("./", "/home/vagrant/app" )
-  
+  config.vm.provision("chef-solo") do |chef|
+    chef.add_recipe("python::default")
+  end
+  config.vm.provision("chef-solo") do |chef|
+    chef.add_recipe("nginx::default")
+  end
 end
