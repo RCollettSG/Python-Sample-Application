@@ -1,0 +1,11 @@
+DEPENDENCIES
+  nginx
+    git: git@github.com:RCollettSG/NginxCookbook.git
+    revision: 7cc7d268bbe3e06760387d16a97baad3148cb384
+  python
+    git: git@github.com:RCollettSG/PythonCookbook.git
+    revision: a60be0b8751a043b27e6af461844acaa53e45403
+
+GRAPH
+  nginx (0.1.0)
+  python (0.1.0)
