@@ -44,7 +44,7 @@
     },
     {
       "type": "shell",
-      "inline": ["cd /home/ubuntu/app", "make bootstrap"]
+      "inline": ["cd /home/ubuntu/app", "sudo make bootstrap"]
     }
   ]
 }
